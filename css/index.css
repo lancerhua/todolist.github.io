@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red!important;
+}
+
+.todoapp {
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 400px;
+    min-height: 400px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+.add {
+    position: relative;
+    padding: 2px 50px 0 10px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.add input {
+    border: none;
+    height: 36px;
+    width: 100%;
+    outline: none;
+}
+
+.addbut {
+    position: absolute;
+    right: -3px;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    font-size: 26px;
+    background-color: purple;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.todolist,
+.donelist {
+    list-style: none;
+    font-size: 18px;
+    color: palevioletred;
+}
+
+.todolist li,
+.donelist li {
+    position: relative;
+    padding-left: 20px;
+    margin: 5px 0;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid brown;
+    border-radius: 20px;
+}
+
+.donelist li {
+    color: #ccc;
+    border-color: #ccc;
+}
+
+.todolist li p,
+.donelist li p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.todolist li a,
+.donelist li a {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 14px;
+    color: #ccc;
+}

@@ -3,19 +3,27 @@ $(function() {
 
     //添加数据
     $(".addbut").on("click", function() {
-        var local = getData();
-        local.push({ title: $("input").val(), done: false });
-        saveData(local);
-        load();
-        $("input").val("");
-    });
-    $(".add input").on("keydown", function(e) {
-        if (e.keyCode === 13) {
+        if ($("input").val() === "") {
+            alert("你输JB呢?");
+        } else {
             var local = getData();
             local.push({ title: $("input").val(), done: false });
             saveData(local);
             load();
             $("input").val("");
+        }
+    });
+    $(".add input").on("keydown", function(e) {
+        if (e.keyCode === 13) {
+            if ($("input").val() === "") {
+                alert("你输JB呢?");
+            } else {
+                var local = getData();
+                local.push({ title: $("input").val(), done: false });
+                saveData(local);
+                load();
+                $("input").val("");
+            }
         }
     });
 
